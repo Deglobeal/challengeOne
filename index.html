@@ -1,64 +1,68 @@
-<script>
-    // Write a function is_anagram(s1, s2)  of each other, 
-    //that takes two strings s1 and s2 
-    //and returns True if the strings are anagrams
-    //and False otherwise.
-
-//declearing the strings
-s1 = "ada";
-s2 = "da";
-let a = "abc";
-let b = "cba";
-const c = "good";
-const d = "dog";
-let str1 = "listen";
-let str2 = "silent";
-str1 = "gram";
-str2 = "arm";
-
-
-
-//using namespace std;
-
-// Function to check if two strings are anagrams
-function areAnagrams(s1, s2) {
-    // Sort both strings and compare
-    // using the split to separte it then join them
-    return s1.split('').sort().join('') 
-    === s2.split('').sort().join('');
-}
-
-// Test cases
-
-
-if (areAnagrams(str1, str2)) {
-    console.log("True");
-} else {
-    console.log("False");
-}
-
-
-if (areAnagrams(str1, str2)) {
-
-    console.log("True");
-} else {
-    console.log("False");
-}
-
-if (areAnagrams(a, b)) {
-    console.log("True");
-} else {
-    console.log("False");
-}
-
-if (areAnagrams(a, c)) {
-    console.log("True");
-} else {
-    console.log("False");
-}
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
-</script>
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Anagrams of strings</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script>
+            // Write a function is_anagram(s1, s2)  of each other, 
+            //that takes two strings s1 and s2 
+            //and returns True if the strings are anagrams
+            //and False otherwise.
+        
+        //declaring the strings
+        s1 = "ada";
+        s2 = "da";
+        let a = "abc";
+        let b = "cba";
+        const c = "good";
+        const d = "dog";
+        let str1 = "listen";
+        let str2 = "silent";
+        str1 = "gram";
+        str2 = "arm";
+        // Function to check if two strings are anagrams
+        function areAnagrams(s1, s2) {
+            // Sort both strings and compare
+            // using the split to separate it then join them
+            return s1.split('').sort().join('') 
+            === s2.split('').sort().join('');
+        }
+        if (areAnagrams(str1, str2)) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+        if (areAnagrams(str1, str2)) {
+        
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+        
+        if (areAnagrams(a, b)) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+        
+        if (areAnagrams(a, c)) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+        if (areAnagrams(str1, b)) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);</script>
+    </head>
+    <body>
+    
+    </body>
+</html>
